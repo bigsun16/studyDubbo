@@ -1,0 +1,11 @@
+server:
+  port: 8082
+dubbo:
+  application:
+    name: order-service-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  consumer:
+    check: false
+    timeout: 3000 #默认时1000
+    retries: 3 #重拾次数
